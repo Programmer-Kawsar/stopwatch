@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stop Watch</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-header">
+              <div class="card-title text-center">
+                <h3 class="text-uppercase">Stop Watch</h3>
+                <h6 class="d-none my-title">
+                  Made by Kawsar Ahamed <sub>( MERN Stack )</sub>
+                </h6>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="button d-flex justify-content-around">
+                <button class="start btn btn-primary pl-4 pr-4">Start</button>
+                <button class="stop btn btn-warning pl-4 pr-4">Stop</button>
+                <button class="reset btn btn-danger pl-4 pr-4">Reset</button>
+              </div>
+
+              <div class="main-text mt-5 d-flex justify-content-center">
+                <h2><span class="hours">00</span> :</h2>
+
+                <h2><span class="minit ml-2">00</span> :</h2>
+
+                <h2><span class="second ml-2">00</span> :</h2>
+
+                <h2><span class="mili-Second ml-2">00</span></h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <audio id="audioPlayer" loop>
+            <source src="./assets/image/effect.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
